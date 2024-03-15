@@ -1,3 +1,5 @@
+// 실패
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -37,7 +39,7 @@ int main() {
         if (top[there] > max_m) top[there] = max_m;
         if (dist[there] > dist[here] + t_w) {
           dist[there] = dist[here] + t_w;
-          pq.push({dist[there], there});
+          pq.push({-dist[there], there});
         }
       }
     }
