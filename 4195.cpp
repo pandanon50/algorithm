@@ -34,9 +34,9 @@ int isFriends(string f) {
     parent[mp[f]] = cnt++;
     r[mp[f]] = 1;
     s[mp[f]] = 1;
-  }
-
-  return parent[mp[f]];
+    return parent[mp[f]];
+  } else
+    return find(mp[f]);
 }
 
 int main() {
